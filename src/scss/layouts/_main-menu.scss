@@ -1,40 +1,70 @@
-*{
-  padding:0;
-  margin:0;
-  box-sizing: border-box;
-}
+
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   background-color: $backgroundNav;
   padding: 0 20px;
   height: 100px;
+  width: 100%;
+
 }
+
 nav a {
   align-self: center;
-  color: $colorNav;
+  color: $colorText;
   font-size: 20px;
   text-decoration: none;
   padding: 10px;
 }
+
 .navigation {
   list-style-type: none;
   display: flex;
 
   align-items: center;
 }
+
 .navigation a {
   display: block;
   padding: 16px;
 
 }
+
 .navigation a:hover {
   background-color: $navhoverbackground;
   color: $backgroundNav;
 }
-.navigation li:last-child {
-  display: none;
+
+
+.about_me {
+  .container-me {
+    height: 45rem;
+    background: $backgroundNav;
+    color: $colorText;
+    font-size: 1.5rem;
+    @include flex(space-around, center);
+
+    .text-me {
+      width: 50%;
+    }
+
+    .myphoto {
+      background-image: url('../../img/myself.jpg');
+      background-repeat: no-repeat;
+      background-position:  50% 20%;
+      background-size: cover;
+      width: 380px;
+      height: 380px;
+      border-radius:  0  0 25% 0;
+
+    }
+  }
 }
+
+footer {
+
+}
+
 
 @media (max-width: 600px) {
   nav {
