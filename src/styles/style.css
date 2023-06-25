@@ -11,6 +11,7 @@ nav {
   padding: 0 20px;
   height: 70px;
   width: 100%;
+  position: fixed;
 }
 
 nav a {
@@ -126,9 +127,29 @@ nav a {
   border-radius: 0 0 0 80px;
 }
 
+@media (max-width: 425px) {
+  .home {
+    width: 80%;
+    flex-direction: column;
+    height: 50rem;
+  }
+}
 .skills {
   background-color: #001C30;
   color: white;
+  height: 15rem;
+}
+.skills ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.skills ul li {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.skills li {
+  list-style-type: none;
+  height: 5rem;
 }
 
 footer {
