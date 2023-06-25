@@ -9,7 +9,7 @@ nav {
   justify-content: flex-end;
   background-color: #001C30;
   padding: 0 20px;
-  height: 100px;
+  height: 70px;
   width: 100%;
 }
 
@@ -33,15 +33,15 @@ nav a {
 }
 
 .navigation a:hover {
-  background-color: white;
-  color: #001C30;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0 20px 0 0;
 }
 
 .about_me .container-me {
   height: 45rem;
-  background: #001C30;
-  color: white;
-  font-size: 1.5rem;
+  background: white;
+  color: #001C30;
+  font-size: 1.3rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -89,9 +89,52 @@ nav a {
     border-bottom: none;
   }
 }
+.home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30rem;
+  background: #001C30;
+  color: white;
+}
+.home .home-text {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0 80px 0 0;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding: 0 30px;
+}
+.home h1 {
+  font-size: 4rem;
+}
+.home h3 {
+  padding-bottom: 26px;
+}
+.home p {
+  font-size: 1.3rem;
+}
+.home .myphoto {
+  background-image: url("../../img/myself.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-size: cover;
+  width: 350px;
+  height: 350px;
+  border-radius: 0 0 0 80px;
+}
+
+.skills {
+  background-color: #001C30;
+  color: white;
+}
+
 footer {
   height: 10rem;
-  background-color: white;
+  background: #001C30;
+  color: white;
 }
 footer .contact {
   height: 10rem;
@@ -106,6 +149,10 @@ footer .contact .icon {
   font-size: 2.5rem;
   padding: 10px;
   text-decoration: none;
+}
+
+html {
+  font-family: sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

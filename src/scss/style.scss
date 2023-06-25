@@ -1,3 +1,7 @@
 @import 'abstracts/__abstracts-dir';
 @import 'base/__base-dir';
 @import "layouts/__layouts-dir";
+
+html {
+  font-family: sans-serif;
+}

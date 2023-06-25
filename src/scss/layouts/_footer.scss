@@ -1,6 +1,7 @@
 footer{
   height:10rem;
-  background-color:white;
+  background: $backgroundNav;
+  color: $colorText;
   .contact{
     height:10rem;
     @include flex(center, center);

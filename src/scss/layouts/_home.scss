@@ -1,0 +1,35 @@
+.home{
+  @include flex(space-around, center);
+
+  height: 30rem;
+  background: $backgroundNav;
+  color: $colorText;
+  .home-text{
+    background-color:$borderText;
+    border-radius:  0  80px  0 0;
+    height: 350px;
+    @include flex(center, start);
+    flex-direction: column;
+    padding: 0 30px;
+  }
+  h1{
+    font-size:4rem;
+  }
+  h3{
+    padding-bottom: 26px;
+  }
+  p{
+    font-size: 1.3rem;
+
+  }
+  .myphoto {
+    background-image: url('../../img/myself.jpg');
+    background-repeat: no-repeat;
+    background-position:  50% 20%;
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+    border-radius:  0  0  0 80px;
+
+  }
+}
